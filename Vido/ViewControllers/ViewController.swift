@@ -13,7 +13,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     var model = Model()
     var videos = [Video]()
     
@@ -38,13 +37,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         // Get a reference to the video that was tapped on
-        _ = videos[tableView.indexPathForSelectedRow!.row]
+        let selectedVideo = videos[tableView.indexPathForSelectedRow!.row]
         
         // Get a reference to the detail view controller
-       // let detailVC = segue.destination as! DetailViewController
+        let detailVC = segue.destination as! DetailViewController
         
         // Set the video property of the detail view controller
-        
+        detailVC.video = selectedVideo
     }
     
     // MARK: - Model Delegate Methods
@@ -75,8 +74,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.setCell(video)
         
-      
-        
         // Return the cell
         return cell
     }
@@ -85,3 +82,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
 }
+

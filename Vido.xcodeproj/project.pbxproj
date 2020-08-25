@@ -18,6 +18,7 @@
 		14C1A04624E47AB0001A72C8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C1A04524E47AB0001A72C8 /* Response.swift */; };
 		14DAE5F224F1913200244716 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAE5F124F1913200244716 /* VideoTableViewCell.swift */; };
 		14DAE5F924F3FDDC00244716 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAE5F824F3FDDC00244716 /* CacheManager.swift */; };
+		14DAE5FB24F4314C00244716 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAE5FA24F4314C00244716 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		14C1A04524E47AB0001A72C8 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		14DAE5F124F1913200244716 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		14DAE5F824F3FDDC00244716 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		14DAE5FA24F4314C00244716 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				14C1A02D24E306DC001A72C8 /* ViewController.swift */,
+				14DAE5FA24F4314C00244716 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DAE5FB24F4314C00244716 /* DetailViewController.swift in Sources */,
 				14C1A04224E33C09001A72C8 /* Model.swift in Sources */,
 				14C1A02E24E306DC001A72C8 /* ViewController.swift in Sources */,
 				14DAE5F224F1913200244716 /* VideoTableViewCell.swift in Sources */,
@@ -349,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QA6NUTFPU6;
 				INFOPLIST_FILE = Vido/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = zzzzzzz;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QA6NUTFPU6;
 				INFOPLIST_FILE = Vido/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = zzzzzzz;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

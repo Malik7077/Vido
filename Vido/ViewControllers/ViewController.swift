@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ModelDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ModelDelegate, UISearchResultsUpdating {
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -27,8 +27,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         model.delegate = self
         
         model.getVideos()
+   
+        // UISearchbar controller implementation
+        
+        let search = UISearchController(searchResultsController: nil)
+        search.searchResultsUpdater = self
+        search.obscuresBackgroundDuringPresentation = false
+        search.searchBar.placeholder = "Type something here to search"
+        navigationItem.searchController = search
     }
-    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        print(text)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         // Confirm that a video was selected
